@@ -33,6 +33,7 @@
     --bg-top-right-card: rgba(0, 0, 0, 0.01);
     --bg-under-left-card: rgba(0, 0, 0, 0.01); 
     --bg-top-right-card-hover: rgba(0, 0, 0, 0.02);
+
     --bg-under-left-card-hover: rgba(0, 0, 0, 0.02);
     --cicle-img: rgba(0, 0, 0, 0.5);
     --footer-a: #000000;
@@ -50,12 +51,13 @@ body * {
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 #container {
     width: 90%;
     max-width: 588px;
-    height: 712px;
+    height: 750px;
     text-align: center;
     margin: 56px auto;
     padding: 0 24px;
@@ -208,4 +210,16 @@ footer a:hover {
     text-decoration: underline;
     color: var(--footer-a);
     opacity: 100%;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+    
+    :root {
+        --bg-url: url(assets/Dark\ mode\ desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(assets/Light\ mode\ desktop.jpg);
+    }
 }
