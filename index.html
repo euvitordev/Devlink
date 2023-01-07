@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">   
+    <script src="https://kit.fontawesome.com/15a9823835.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,45 +20,65 @@
                 <img src="https://github.com/euvitordev.png" alt="Foto de Vitor Lucas com cabelo cacheado, camisa social branca e fundo preto.">
                 <h1>Vitor Lucas</h1>
             </div>
+
+            <!-- ToogleMode -->
             <div id="switch" onclick="toggleMode()">
                 <button></button>
                 <span></span>
             </div>
+
+            <!-- music player -->  
+            <div id="music-card">
+                <audio id="player" src="music/Mood Lofi.mp3"></audio>
+                <div class="control-panel">
+                    <div class="album-art">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27346542f658d64ede622447d05" alt="">
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="play">
+                        <i class="fa-regular fa-circle-play" id="playbtn"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links -->
             <ul>
                 <li>
-                    <a href="#">Meu Portfólio</a>
+                    <a href="#">Portfólio em criação</a>
                 </li>
                 <li>
-                    <a href="#">Minha loja</a>
+                    <a href="https://github.com/euvitordev/Devlink" target="_blank">Projeto listado no github</a>
                 </li>
                 <li>
-                    <a href="#">Minhas inspirações</a>
-                </li>
-                <li>
-                    <a href="#">Sobre min</a>
+                    <a href="#">#boraCodar!</a>
                 </li>
             </ul>
-            <div id="social-links">
 
+            <!-- Social Links -->
+            <div id="social-links">
                 <a href="https://instagram.com/euvitordev" target="_blank">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
                 <a href="https://github.com/euvitordev" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
-                <a href="https://linkedin.com">
+                <a href="https://linkedin.com/in/euvtitordev" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/channel/UCgLnCW07t-4-y9YgDwI6bSw" target="_blank">
                     <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+                <a href="https://discord.gg/rm3sDKjf69" target="_blank">
+                    <ion-icon name="logo-discord"></ion-icon>
                 </a>
             </div>
             <footer>
-                Feito com ♥ por <a href="">Vitor Lucas</a>
+                Feito com ♥ por <a href="https://github.com/euvitordev" target="_blank">Vitor Lucas</a>
             </footer>
         </div>
     </main>
-    <script src="main.js"></script>
+    <script src="player.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
